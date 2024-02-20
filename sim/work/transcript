@@ -1,0 +1,170 @@
+# //  Questa Sim-64
+# //  Version 2023.4 linux_x86_64 Oct  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim.wlf opened as dataset "vsim"
+add wave -position insertpoint  \
+vsim:/test_top/CLK \
+vsim:/test_top/RESETN \
+vsim:/test_top/PADDR \
+vsim:/test_top/PWDATA \
+vsim:/test_top/PWRITE \
+vsim:/test_top/PSEL \
+vsim:/test_top/PENABLE \
+vsim:/test_top/PRDATA \
+vsim:/test_top/PREADY \
+vsim:/test_top/PSLVERR \
+vsim:/test_top/rx_i \
+vsim:/test_top/tx_o \
+vsim:/test_top/event_o
+dataset reload -f
+# vsim:/test_top
+dataset reload -f
+# vsim:/test_top
+dataset reload -f
+# vsim:/test_top
+dataset reload -f
+# vsim:/test_top
+dataset reload -f
+# vsim:/test_top
+add wave -position insertpoint  \
+vsim:/test_top/apb_uart/uart_tx_fifo/clk \
+vsim:/test_top/apb_uart/uart_tx_fifo/reset_n \
+vsim:/test_top/apb_uart/uart_tx_fifo/clr_i \
+vsim:/test_top/apb_uart/uart_tx_fifo/ready_i \
+vsim:/test_top/apb_uart/uart_tx_fifo/valid_i \
+vsim:/test_top/apb_uart/uart_tx_fifo/data_i \
+vsim:/test_top/apb_uart/uart_tx_fifo/ready_o \
+vsim:/test_top/apb_uart/uart_tx_fifo/valid_o \
+vsim:/test_top/apb_uart/uart_tx_fifo/elements_o \
+vsim:/test_top/apb_uart/uart_tx_fifo/data_o \
+vsim:/test_top/apb_uart/uart_tx_fifo/empty \
+vsim:/test_top/apb_uart/uart_tx_fifo/full \
+vsim:/test_top/apb_uart/uart_tx_fifo/error \
+vsim:/test_top/apb_uart/uart_tx_fifo/pointer_in \
+vsim:/test_top/apb_uart/uart_tx_fifo/pointer_out \
+vsim:/test_top/apb_uart/uart_tx_fifo/elements
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_tx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_tx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_tx_fifo
+add wave -position insertpoint  \
+vsim:/test_top/apb_uart/uart_tx/clk \
+vsim:/test_top/apb_uart/uart_tx/reset_n \
+vsim:/test_top/apb_uart/uart_tx/cfg_en_i \
+vsim:/test_top/apb_uart/uart_tx/cfg_div_i \
+vsim:/test_top/apb_uart/uart_tx/cfg_parity_en_i \
+vsim:/test_top/apb_uart/uart_tx/cfg_bits_i \
+vsim:/test_top/apb_uart/uart_tx/cfg_stop_bits_i \
+vsim:/test_top/apb_uart/uart_tx/tx_data_i \
+vsim:/test_top/apb_uart/uart_tx/tx_valid_i \
+vsim:/test_top/apb_uart/uart_tx/tx_ready_o \
+vsim:/test_top/apb_uart/uart_tx/tx_o \
+vsim:/test_top/apb_uart/uart_tx/busy_o \
+vsim:/test_top/apb_uart/uart_tx/current_state \
+vsim:/test_top/apb_uart/uart_tx/next_state \
+vsim:/test_top/apb_uart/uart_tx/reg_data \
+vsim:/test_top/apb_uart/uart_tx/reg_data_next \
+vsim:/test_top/apb_uart/uart_tx/reg_bit_count \
+vsim:/test_top/apb_uart/uart_tx/reg_bit_count_next \
+vsim:/test_top/apb_uart/uart_tx/s_target_bits \
+vsim:/test_top/apb_uart/uart_tx/parity_bit \
+vsim:/test_top/apb_uart/uart_tx/parity_bit_next \
+vsim:/test_top/apb_uart/uart_tx/sampleData \
+vsim:/test_top/apb_uart/uart_tx/baud_cnt \
+vsim:/test_top/apb_uart/uart_tx/baudgen_en \
+vsim:/test_top/apb_uart/uart_tx/bit_done
+add wave -position insertpoint  \
+vsim:/test_top/apb_uart/uart_reg_blk/reg_dll_dll \
+vsim:/test_top/apb_uart/uart_reg_blk/reg_dlh_dlh
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_reg_blk
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_reg_blk
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_reg_blk
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_reg_blk
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_reg_blk
+dataset reload -f
+# vsim:/test_top/apb_uart
+add wave -position insertpoint  \
+vsim:/test_top/apb_uart/uart_rx/clk \
+vsim:/test_top/apb_uart/uart_rx/reset_n \
+vsim:/test_top/apb_uart/uart_rx/rx_i \
+vsim:/test_top/apb_uart/uart_rx/cfg_div_i \
+vsim:/test_top/apb_uart/uart_rx/cfg_en_i \
+vsim:/test_top/apb_uart/uart_rx/cfg_parity_en_i \
+vsim:/test_top/apb_uart/uart_rx/cfg_bits_i \
+vsim:/test_top/apb_uart/uart_rx/busy_o \
+vsim:/test_top/apb_uart/uart_rx/err_o \
+vsim:/test_top/apb_uart/uart_rx/err_clr_i \
+vsim:/test_top/apb_uart/uart_rx/rx_data_o \
+vsim:/test_top/apb_uart/uart_rx/rx_valid_o \
+vsim:/test_top/apb_uart/uart_rx/rx_ready_i \
+vsim:/test_top/apb_uart/uart_rx/current_state \
+vsim:/test_top/apb_uart/uart_rx/next_state \
+vsim:/test_top/apb_uart/uart_rx/reg_data \
+vsim:/test_top/apb_uart/uart_rx/reg_data_next \
+vsim:/test_top/apb_uart/uart_rx/reg_rx_sync \
+vsim:/test_top/apb_uart/uart_rx/reg_bit_count \
+vsim:/test_top/apb_uart/uart_rx/reg_bit_count_next \
+vsim:/test_top/apb_uart/uart_rx/s_target_bits \
+vsim:/test_top/apb_uart/uart_rx/parity_bit \
+vsim:/test_top/apb_uart/uart_rx/parity_bit_next \
+vsim:/test_top/apb_uart/uart_rx/sampleData \
+vsim:/test_top/apb_uart/uart_rx/baud_cnt \
+vsim:/test_top/apb_uart/uart_rx/baudgen_en \
+vsim:/test_top/apb_uart/uart_rx/bit_done \
+vsim:/test_top/apb_uart/uart_rx/start_bit \
+vsim:/test_top/apb_uart/uart_rx/set_error \
+vsim:/test_top/apb_uart/uart_rx/s_rx_fall
+add wave -position insertpoint  \
+vsim:/test_top/apb_uart/uart_rx_fifo/clk \
+vsim:/test_top/apb_uart/uart_rx_fifo/reset_n \
+vsim:/test_top/apb_uart/uart_rx_fifo/clr_i \
+vsim:/test_top/apb_uart/uart_rx_fifo/ready_i \
+vsim:/test_top/apb_uart/uart_rx_fifo/valid_i \
+vsim:/test_top/apb_uart/uart_rx_fifo/data_i \
+vsim:/test_top/apb_uart/uart_rx_fifo/ready_o \
+vsim:/test_top/apb_uart/uart_rx_fifo/valid_o \
+vsim:/test_top/apb_uart/uart_rx_fifo/elements_o \
+vsim:/test_top/apb_uart/uart_rx_fifo/data_o \
+vsim:/test_top/apb_uart/uart_rx_fifo/empty \
+vsim:/test_top/apb_uart/uart_rx_fifo/full \
+vsim:/test_top/apb_uart/uart_rx_fifo/error \
+vsim:/test_top/apb_uart/uart_rx_fifo/pointer_in \
+vsim:/test_top/apb_uart/uart_rx_fifo/pointer_out \
+vsim:/test_top/apb_uart/uart_rx_fifo/elements
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+dataset reload -f
+# vsim:/test_top/apb_uart/uart_rx_fifo
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /new_data6/workspace/lampn0/Personal/apb_uart/sim/work/wave.do

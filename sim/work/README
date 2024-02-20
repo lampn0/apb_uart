@@ -1,0 +1,106 @@
+
+**************************************************************************
+Testbench for APB UART IP
+*************************************************************************
+
+CONTENTS:
+A. Introduction
+B. Running the Testbench
+C. Files
+D. SystemVerilog Testbench Description
+
+-------------------------------------------------------------------------
+A. Introduction
+-------------------------------------------------------------------------
+
+This instruction shows how to use a testbench.
+
+------------------------------------------------------------------------
+B. Running the Testbench
+------------------------------------------------------------------------
+
+1. Linux:
+
+  a) Set variable environment:
+
+    export PATH=$PATH:<location of QuestaSim>
+
+  b) Source the run script:
+
+    source run
+
+  c) Run command:
+
+    1. Remove older work and make new lib
+
+      vlb
+
+    2. Compile RTL and Testbench
+
+      vlg
+
+    3. Run simulation
+
+      vsm
+
+  d) View wave:
+
+    vsim -view vsim.wlf -do wave.do
+
+2. Windows:
+
+  If variable environment is set, open Command Prompt
+
+  a) Source the run script:
+
+    source run
+
+  b) Run command:
+
+    1. Remove older work and make new lib
+
+      vlb
+
+    2. Compile RTL and Testbench
+
+      vlg
+
+    3. Run simulation
+
+      vsm
+
+  c) View wave:
+
+    vsim -view vsim.wlf -do wave.do
+
+-------------------------------------------------------------------------
+C. Files
+-------------------------------------------------------------------------
+
+<top_directory>
+      |
+      |-> hdl
+      |     -> apb_uart.sv
+      |     -> apb_uart_fifo.sv
+      |     -> apb_uart_interrupt.sv
+      |     -> apb_uart_rb_apb_bridge.sv
+      |     -> apb_uart_rb_regs.sv
+      |     -> apb_uart_reg_blk.sv
+      |     -> apb_uart_rx.sv
+      |     -> apb_uart_tx.sv
+      |-> sim
+      |     -> src
+      |          -> test_top.sv
+      |     -> work
+      |          -> filelist_com.f
+      |          -> filelist_rtl.f
+      |          -> README
+      |          -> run
+
+-------------------------------------------------------------------------
+D. SystemVerilog Testbench Description
+-------------------------------------------------------------------------
+
+The top-level testbench is written in SystemVerilog.
+
+The file containing the top-level testbench in the example is "test_top.sv".

@@ -1,0 +1,8 @@
+#!/bin/bash
+reset
+
+alias vlb='reset; rm -rf work; rm -rf *.log; vlib work'
+alias vlgr='vlog -f filelist_com.f -f filelist_rtl.f -l vlogr.log'
+alias vlgt='vlog -f filelist_com.f ../src/test_top.sv -l vlogt.log'
+alias vlg='vlgr; vlgt'
+alias vsm='vsim -c test_top -wlf vsim.wlf -solvefaildebug -voptargs=+acc -l vsim.log -do "add wave -r /test_top/*; run -all; quit"'

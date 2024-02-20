@@ -1,0 +1,9 @@
+QuestaSim-64 vlog 2023.4 Compiler 2023.10 Oct  9 2023
+Start time: 17:32:41 on Feb 19,2024
+vlog -f filelist_com.f ../src/test_top.sv -l vlogt.log 
+-- Compiling module test_top
+
+Top level modules:
+	test_top
+End time: 17:32:41 on Feb 19,2024, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
